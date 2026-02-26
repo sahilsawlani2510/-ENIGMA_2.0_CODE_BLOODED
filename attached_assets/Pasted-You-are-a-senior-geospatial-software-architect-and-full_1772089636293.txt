@@ -1,0 +1,76 @@
+You are a senior geospatial software architect and full-stack engineer.
+
+Build a production-ready web application called:
+
+"Resilient City – Digital Twin for SDG 11"
+
+Objective:
+Create a 3D web-based digital twin simulator for a high-growth urban area (Navi Mumbai, India) that models:
+
+• Urban heat island effect
+• Green cover impact
+• Flash flood simulation
+• Real-time SDG 11 health score
+
+Tech Stack Requirements:
+- React (Vite)
+- MapLibre GL JS (NO Mapbox token)
+- Pure JavaScript
+- No backend required (simulate data)
+- Clean modular code
+- Modern dashboard UI (dark theme)
+
+Core Functional Requirements:
+
+1. 3D City View
+   - 3D extruded buildings
+   - Tilted camera (pitch 60+)
+   - Organic cluster-based city layout (NOT grid)
+   - Buildings should remain fixed once generated
+   - Heat values dynamically change
+   - Flood state dynamically change
+
+2. Green Cover Simulation
+   - Slider (0% – 50%)
+   - Higher green cover reduces heat intensity
+   - Update building color accordingly
+
+3. Flood Simulation
+   - Toggle button
+   - Flood turns affected buildings blue
+   - Reduce health score when active
+
+4. City Health Score (0–100)
+   Score formula:
+   - 40% green cover contribution
+   - 30% inverse heat average
+   - 30% flood penalty
+   Should update live
+
+5. UI Requirements
+   - Left sidebar dashboard
+   - Large animated health score number
+   - Status indicator (Normal / Flood Emergency)
+   - Modern glassmorphism/dark UI
+   - Professional hackathon-ready look
+
+6. Performance
+   - City layout generated only once
+   - Do NOT regenerate building positions on slider change
+   - Update only properties (heat/flood)
+
+7. Code Structure
+   - Separate functions:
+     generateBaseCity()
+     updateCity()
+     calculateHealthScore()
+   - Clean comments
+   - Maintainable structure
+
+Deliver:
+- Full App.jsx file
+- All logic included
+- No pseudo code
+- Fully working implementation
+
+Make it look impressive enough to win a hackathon demo.
